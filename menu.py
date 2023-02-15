@@ -50,6 +50,7 @@ class Menu:
     
     def clear(self):
         # for windows
+        # print(name)
         if name == 'nt':
             _ = system('cls')
         # for mac and linux(here, os.name is 'posix')

@@ -8,9 +8,12 @@
 
 ## **HOW TO PLAY:**
 
+- *In the directory `MasterMind` execute `python3 main.py`*
+
 ## **FEATURES:**
 
-## **Creator:**
+- *UI selection menu*
 
+## **Creator:**
 *- Godlonx*
 
