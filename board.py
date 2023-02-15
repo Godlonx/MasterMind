@@ -12,4 +12,3 @@ class gameBoard:
 
     def displayInfo(self):
         lastTry = self.trials[len(self.trials)-1]
-        # for 
