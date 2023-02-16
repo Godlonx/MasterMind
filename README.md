@@ -15,5 +15,5 @@
 - *UI selection menu*
 
 ## **Creator:**
-*- Godlonx*
+- *Godlonx*
 

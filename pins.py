@@ -1,6 +1,6 @@
 class pins :
-    def __init__(self) -> None:
-        self._color
+    def __init__(self, color) -> None:
+        self._color = color
     
     def get_color(self):
         return self._color

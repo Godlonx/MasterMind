@@ -11,7 +11,7 @@ class Menu:
     # 34 blue
     # 35 purple
     # 36 cyan
-    def __init__(self, buttons, description) -> None:
+    def __init__(self, buttons, description = "") -> None:
         self.selection = 0
         self.buttons = buttons
         self.description = description
@@ -26,9 +26,9 @@ class Menu:
         elif key == Key.right:
             if self.selection < len(self.buttons)-1:
                 self.selection += 1
-        self.showChoices()
         if key == Key.enter:
-            print(self.buttons[self.selection])
+            self.description += self.buttons[self.selection]
+        self.showChoices()
         
 
     def showChoices(self):
@@ -42,6 +42,7 @@ class Menu:
             if index < len(self.buttons)-1:
                 printedVal += " | "
         print(printedVal)
+        print(self.description)
 
     # Collect events until release
     def showMenu(self):
@@ -52,7 +53,7 @@ class Menu:
         # for windows
         # print(name)
         if name == 'nt':
-            _ = system('cls')
+            system('cls')
         # for mac and linux(here, os.name is 'posix')
         else:
-            _ = system('clear')
+            system('clear')
