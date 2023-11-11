@@ -35,7 +35,7 @@ class Menu:
         
 
     def showChoices(self) -> None:
-        # self.clear()
+        self.clear()
         printedVal = ""
         
         for index, button in enumerate(self.buttons):
@@ -46,6 +46,8 @@ class Menu:
             if index < len(self.buttons)-1:
                 printedVal += " | "
         print(self.title)
+        print()
+        print("\033[1;35m⬤\x1b[1;0m is for good position and \033[1;37m⬤\x1b[1;0m is for good color")
         print()
         print(self.description)
         print(printedVal)

@@ -43,7 +43,7 @@ class GameBoard:
                         if pin.color == secretPin.color and pin.pos != secretPin.pos:
                             trial.indications["goodColor"] += 1
                             del pins[index]
-                            do = False36
+                            do = False
                 print(pins)
         if trial.indications["goodPos"] == 5:
             self.Win()

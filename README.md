@@ -9,6 +9,7 @@
 ## **HOW TO PLAY:**
 
 - *In the directory `MasterMind` execute `python3 main.py`*
+- *Now enjoy your game !!*
 
 ## **FEATURES:**
 
